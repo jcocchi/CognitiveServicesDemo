@@ -5,7 +5,7 @@ public async Task<String> MakeRequest(string submittedPhoto)
     var client = new HttpClient();
 
     // Add request headers
-    client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "6470040a779d442b93118357ccff41ce"); // TODO: Fix key
+    client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", {Your subscription key here}); // TODO: Fix key
     var uri = "https://api.projectoxford.ai/emotion/v1.0/recognize";
             
     // Format request body
