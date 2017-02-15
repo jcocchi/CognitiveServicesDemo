@@ -1,0 +1,42 @@
+// This funtion goes in the Controllers/HomeController.cs file under the "helper functions" comment
+
+public async Task<String> MakeRequest(string submittedPhoto)
+{
+    var client = new HttpClient();
+
+    // Add request headers
+    client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "6470040a779d442b93118357ccff41ce"); // TODO: Fix key
+    var uri = "https://api.projectoxford.ai/emotion/v1.0/recognize";
+            
+    // Format request body
+    String picURL= "\"" + submittedPhoto + "\"";
+    String format = "\"url\":";
+    String requestBody= String.Format("{0} {1}", format, picURL);
+    requestBody = "{" + requestBody + "}";
+    byte[] byteData = Encoding.UTF8.GetBytes(requestBody);
+
+    // Send request
+    HttpResponseMessage response;
+    using (var content = new ByteArrayContent(byteData))
+    {
+        content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+        response = await client.PostAsync(uri, content).ConfigureAwait(false);
+    }
+    // Set up objects to store top emotion
+    EmotionSet emotions = new EmotionSet();            
+    string topEmotion = "";
+    
+    // Prepare result string for JSON conversion            
+    HttpContent httpResults = response.Content;
+    var results = await httpResults.ReadAsStringAsync();
+    results = results.TrimStart('[');
+    results= results.TrimEnd(']');
+    // Validate response: an invalid link will return an error code and an invalid image will return "[]"            
+    if (!results.Contains("error") && results.Length > 2)
+    {
+        // Populate a JSON object with the results of the API call and find the top emotion
+        JsonConvert.PopulateObject(results, emotions);
+        topEmotion = emotions.getTopScore();
+    }
+    return topEmotion;
+}
