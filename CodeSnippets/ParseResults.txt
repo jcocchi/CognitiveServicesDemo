@@ -1,0 +1,22 @@
+// This funtion goes in the Controllers/HomeController.cs file under the "helper functions" comment
+
+public string ParseResults(string results)
+{
+    // Set up objects to store top emotion
+    EmotionSet emotions = new EmotionSet();            
+    string topEmotion = "";
+
+    // Trim unneccesary brackets from the response 
+    results = results.TrimStart('[');
+    results= results.TrimEnd(']');
+
+    // Validate response: an invalid link will return an error code and an invalid image will return "[]"            
+    if (!results.Contains("error") && results.Length > 2)
+    {
+        // Populate a JSON object with the results of the API call and find the top emotion
+        JsonConvert.PopulateObject(results, emotions);
+        topEmotion = emotions.getTopScore();
+    }
+    
+    return topEmotion;
+}
