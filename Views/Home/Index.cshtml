@@ -1,18 +1,18 @@
 @{
-    ViewData["Title"] = "Which Dwight";
+    ViewData["Title"] = "Which Character From The Office Are You";
 }
 
 <h2> Link Your Photo </h2>
 
 <p>
-    Please type the URL of the photo you want to use to see which version of Dwight Schrute you are!
+    Please type the URL of the photo you want to use to see which character from The Office you are!
 </p><br>
 
 <form asp-controller="Home" asp-action="Index" method="post">
     <div>
         <label>Link</label>
         <input type="text" name="link">
-    </div>
+    </div><br/>
 
     <div>
         <input type="submit" value="Submit" class="btn btn-default" />
