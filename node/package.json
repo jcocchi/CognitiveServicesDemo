@@ -1,0 +1,23 @@
+{
+  "name": "cognitiveservicesdemo",
+  "version": "1.0.0",
+  "description": "A demo of the Microsoft Cognitive Services integrated with express and node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcocchi/CognitiveServicesDemo.git"
+  },
+  "keywords": [
+    "cognitive",
+    "services"
+  ],
+  "author": "Justine Cocchi",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jcocchi/CognitiveServicesDemo/issues"
+  },
+  "homepage": "https://github.com/jcocchi/CognitiveServicesDemo#readme"
+}
