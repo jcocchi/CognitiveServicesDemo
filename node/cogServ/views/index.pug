@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p #{description}
+
+  form(method='POST' action='/results')
+    div.form-group
+      input#url.form-control(type='text', placeholder='enter url here' name='url')
+    button.btn.btn-primary(type='submit') Get Results
