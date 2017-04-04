@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+input {
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
