@@ -14,3 +14,7 @@ input {
 .form-group {
   margin-bottom: 5px;
 }
+
+.resultImg {
+  width: 600px;
+}

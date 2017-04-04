@@ -2,7 +2,8 @@ const request = require('request-promise-native')
 const express = require('express')
 const router = express.Router()
 
-var EMOTION_KEY = '6b10ef64bd8e4961a0ee319b443e9166'
+// YOUR KEY HERE
+var EMOTION_KEY = ''
 var EMOTION_URL = 'https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?subscription-key=' + EMOTION_KEY
 
 router.post('/', function (req, res, next) {
