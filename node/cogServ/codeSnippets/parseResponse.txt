@@ -2,34 +2,15 @@
 
 function parseResponse (response) {
   // Create array of emotion values
-  var emotions = parseEmotions(response[0].scores)
+  var emotions = response[0].scores
 
-  // Find top emotion
-  var topEmotion = 0
-  for (var i = 0; i < 8; i++) {
-    if (emotions[i] > emotions[topEmotion]) {
-      topEmotion = i
+  // Loop through the array to find the top emotion
+  var topEmotion = 'anger'
+  for (var e in emotions) {
+    if (emotions[e] > emotions[topEmotion]) {
+      topEmotion = e
     }
   }
 
-  // Return top emotion
-  switch (topEmotion) {
-    case 0:
-      return 'anger'
-    case 1:
-      return 'contempt'
-    case 2:
-      return 'disgust'
-    case 3:
-      return 'fear'
-    case 4:
-      return 'happiness'
-    case 5:
-      return 'neutral'
-    case 6:
-      return 'sadness'
-    case 7:
-      return 'surprise'
-  }
-  return null
+  return topEmotion
 }

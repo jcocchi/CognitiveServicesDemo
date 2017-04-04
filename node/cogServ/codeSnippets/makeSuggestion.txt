@@ -36,7 +36,7 @@ function makeSuggestion (topEmotion) {
       break
     case 'surprise':
       link = '/images/Jim.jpg'
-      description = "You look just as suprised as Jim walking in on Dwight's birthday suprise."
+      description = "You look just as suprised as Jim walking in on Dwight's birthday suprise for Kelly."
       break
     case '':
       link = '/images/Error.jpg'
