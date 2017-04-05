@@ -37,3 +37,5 @@ Now our site is complete. When you enter the URL of a photo you should see an im
 
 ## Step 4 - Customize your site
 Feel free to customize your site however you want! Change the theme, modify the suggestion to be based off of the lowest emotion score, or add another API call to make your site even smarter.
+
+> Note: All static files are stored in the `public` folder. To add new images put them in the `public/images/` folder.
