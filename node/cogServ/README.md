@@ -10,10 +10,11 @@ Fork, clone, or download this repository. From the command line, navigate to the
 > Note: From here on, all file paths are relative to `node/cogServ/`
 
 ## Step 1 - Make the API call
-1. Uncomment `callAPI(url)` on line 14 of `controllers/results.js`
-2. Copy the contents of `codeSnippets/callAPI.txt` and paste them in `controllers/results.js` under the "Helper Functions Here" comment at the end of the file
-3. Put a breakpoint on line 16 `var results = response` and run the project
-4. Navigate to `http://localhost:3000/`, enter the URL of a photo and hit enter
+1. Paste your Emotion API key from step 0 inside the quotes of line 6 in `controllers/results.js` to look like this `var EMOTION_KEY = '1234'` where 1234 is your key
+2. Uncomment `callAPI(url)` on line 14 of `controllers/results.js`
+3. Copy the contents of `codeSnippets/callAPI.txt` and paste them in `controllers/results.js` under the "Helper Functions Here" comment at the end of the file
+4. Put a breakpoint on line 16 `var results = response` and run the project
+5. Navigate to `http://localhost:3000/`, enter the URL of a photo and hit enter
 
 When the breakpoint is hit, you should see the `scores` object as well as the `faceRectangle` object returned from the API call. Press continue and wait for the results page to load. We won't see our results yet- we will only see the value of the link we passed in.
 
