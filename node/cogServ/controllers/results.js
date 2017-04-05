@@ -22,12 +22,6 @@ router.post('/', function (req, res, next) {
     // var suggestion = makeSuggestion(topEmotion)
 
     // RENDER RESULTS
-    // res.render('results',
-    //   { title: 'Results',
-    //     description: suggestion.description,
-    //     photo: suggestion.photo })
-
-    // DELETE ME AFTER UNCOMMENTING ABOVE
     res.render('results', {
       title: 'Results',
       description: 'You entered: ' + url
