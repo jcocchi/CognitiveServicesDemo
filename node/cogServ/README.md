@@ -5,7 +5,7 @@ If you didn't already get an Emotion API key, go back to the [main README](https
 
 For this workshop you will need to have [Node.js](https://nodejs.org/en/download/) installed as well as any text editor- my favorite is [Visual Studio Code](https://code.visualstudio.com/download).
 
-Fork, clone, or download this repository. From the command line, navigate to the `node/cogServ/` directory and enter `npm install`. To see the starting point for our project, run it by entering `node app.js` and navigating to `http://localhost:3000/` in your browser.
+Fork, clone, or download this repository. From the command line, navigate to the `node/cogServ/` directory and enter `npm install`. To see the starting point for our project, run it by entering `set DEBUG=cogServ:* & npm start` if you are on a Windows machine and entering `DEBUG=cogServ:* npm start` if you are on a MacOS or Linux machine. The navigate to `http://localhost:3000/` in your browser.
 
 > Note: From here on, all file paths are relative to `node/cogServ/`
 
