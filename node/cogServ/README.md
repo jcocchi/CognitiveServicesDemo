@@ -5,9 +5,9 @@ If you didn't already get an Emotion API key, go back to the [main README](https
 
 For this workshop you will need to have [Node.js](https://nodejs.org/en/download/) installed as well as any text editor- my favorite is [Visual Studio Code](https://code.visualstudio.com/download).
 
-Fork, clone, or download this repository. From the command line, navigate to the `node/cogServ/` directory and enter `npm install`. To see the starting point for our project, run it by entering `node app.js` and navigating to `http://localhost:3000/` in your browser.
+Fork, clone, or download this repository. From the command line, navigate to the `YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ/` directory and enter `npm install`. To see the starting point for our project, run it by entering `node app.js` and navigating to `http://localhost:3000/` in your browser.
 
-> Note: From here on, all file paths are relative to `node/cogServ/`
+> Note: From here on, all file paths are relative to `YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ/`
 
 ## Step 1 - Make the API call
 1. Paste your Emotion API key from step 0 inside the quotes of line 6 in `controllers/results.js` to look like this `var EMOTION_KEY = '1234'` where 1234 is your key
