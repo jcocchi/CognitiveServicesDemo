@@ -61,29 +61,7 @@ namespace WebApplication.Controllers
         // =========================================================
         // Helper functions, paste code snippets here
         // =========================================================
+        
 
-
-        // =========================================================
-        // ASP.NET Core Templated Code
-        // We won't use these for this workshop
-        // =========================================================        
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Error()
-        {
-            return View();
-        }
     }
 }
