@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p #{description}
+  p= `I'm ${probability}% sure that I got that right...`
   img.resultImg(src='http://localhost:3000' + photo)
   break
 

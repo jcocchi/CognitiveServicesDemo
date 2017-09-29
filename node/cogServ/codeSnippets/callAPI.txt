@@ -1,11 +1,17 @@
 // This funtion goes in the controllers/results.js file under the "helper functions" comment
 
 function callAPI (url) {
- // Call API
-  return request.post({
-    url: EMOTION_URL,
-    json: {'url': url}
-  }).then((result) => {
-    return result
-  })
+  const options = {
+    uri: process.env.PREDICTION_URL,
+    headers: {
+      'Prediction-Key': process.env.PREDICTION_KEY,
+      'Content-Type': 'application/json'
+    },
+    body: `{"Url": "${url}"}`
+  }
+
+  return request.post(options)
+    .then((result) => {
+      return JSON.parse(result)
+    })
 }

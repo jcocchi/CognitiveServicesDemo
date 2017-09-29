@@ -1,16 +1,13 @@
 // This funtion goes in the controllers/results.js file under the "helper functions" comment
 
-function parseResponse (response) {
-  // Create array of emotion values
-  var emotions = response[0].scores
-
-  // Loop through the array to find the top emotion
-  var topEmotion = 'anger'
-  for (var e in emotions) {
-    if (emotions[e] > emotions[topEmotion]) {
-      topEmotion = e
+function parseResponse (predictions) {
+  // Loop through the array to find the top score
+  var top = predictions[0]
+  predictions.forEach(p => {
+    if (p.Probability > top.Probability) {
+      top = p
     }
-  }
+  })
 
-  return topEmotion
+  return top
 }

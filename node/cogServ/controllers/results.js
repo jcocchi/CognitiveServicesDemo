@@ -1,38 +1,37 @@
+require('dotenv').load()
 const request = require('request-promise-native')
 const express = require('express')
 const router = express.Router()
 
-// YOUR KEY HERE
-var EMOTION_KEY = ''
-var EMOTION_URL = 'https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize?subscription-key=' + EMOTION_KEY
-
 router.post('/', function (req, res, next) {
-  var url = req.body.url
+  const url = req.body.url
 
   Promise.all([
-    // MAKE CALL TO COG SERVICES
+    // MAKE CALL TO CUSTOM VISION API
     // callAPI(url)
   ]).then(([response]) => {
     var results = response
 
-    // PARSE RESULTS HERE
-    // var topEmotion = parseResponse(results)
+    // PARSE THE RESPONSE TO FIND THE HIGHEST PREDICTION
+    // const top = parseResponse(results.Predictions)
 
-    // DETERMINE WHICH IMAGE TO DISPLAY
-    // var suggestion = makeSuggestion(topEmotion)
+    // GET THE DATA FOR THE TOP SCORED TAG
+    // const data = getTagData(top)
 
     // RENDER RESULTS
     res.render('results', {
       title: 'Results',
-      description: 'You entered: ' + url
+      description: `You entered ${url}`,
+      probability: 100
     })
   }).catch(reason => {
-    console.log('Promise was rejected becasue ' + reason)
+    console.log(`Promise was rejected becasue ${reason}`)
 
     // RENDER AN ERROR MESSAGE
     res.render('results',
       { title: 'Error',
-        description: 'Oops something went wrong! Please make sure that you submitted the correct image link and that your face is both promienent in the image and unobstructed. Submit another link to try again!',
+        description: 'Oops something went wrong! Submit another link to try again!',
+        probability: 100,
         photo: '/images/Error.jpg'
       })
   })

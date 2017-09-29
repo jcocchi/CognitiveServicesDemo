@@ -1,0 +1,35 @@
+// This funtion goes in the controllers/results.js file under the "helper functions" comment
+
+function getTagData (top) {
+  var link = ''
+  var description = ''
+
+  // Decide which image and description to use based on the tag passed in
+  switch (top.Tag) {
+    case 'lannister':
+      link = '/images/lannister.png'
+      description = 'I spy the Lannister sigil, always pay your debts!'
+      break
+    case 'stark':
+      link = '/images/stark.png'
+      description = 'Looks like house Stark, winter is coming!'
+      break
+    case 'targaryen':
+      link = '/images/targaryen.png'
+      description = 'Fierce like the Mother of Dragons, you just entered the Targaryen sigil!'
+      break
+    case '':
+      link = '/images/Error.jpg'
+      description = 'Oops something went wrong! Submit another link to try again!'
+      break
+  }
+
+  // Store suggestion
+  const data = {
+    photo: link,
+    description: description,
+    probability: top.Probability
+  }
+
+  return data
+}
