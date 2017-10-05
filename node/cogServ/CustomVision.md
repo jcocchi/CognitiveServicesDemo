@@ -9,7 +9,7 @@ Custom Vision Service is a tool for building custom image classifiers. It makes 
 
 ## Step 1 - Getting Started
 To get started go to [https://customvision.ai](https://customvision.ai) after logging in with your Microsoft Account:
-*Click `New Project` to create your first project
+* Click `New Project` to create your first project
 * Accept Terms of Service
 * Add a Name and Description to the project
 * For this project select `General` as the Domain and click `Create project`
@@ -28,4 +28,4 @@ The model will train and test your images and give you a performance review for 
 
 ## Step 4 - Pediction URL & Key
 Click the `Prediction URL` to save the URL and Prediction Key.
-You are now ready to proceed to Step 1 on the README
+You are now ready to proceed to Step 1 on the [README](https://github.com/jcocchi/CognitiveServicesDemo/blob/master/node/cogServ/README.md)
