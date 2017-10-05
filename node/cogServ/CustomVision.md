@@ -1,6 +1,6 @@
 # Custom Vision Model #
 
-Custom Vision Service is a tool for building custom image classifiers. It makes it easy and fast to build, deploy, and improve an image classifier.
+Custom Vision Service is a tool for building custom image classifiers. It makes it easy and fast to build, deploy, and improve an image classifier. For this exercise we'll put together a model to classify pictures of Game of Thrones house symbols.
 
 ## Step 0 - Prerequisites
 * A [Microsoft Account](https://signup.live.com/) is necessary in order to use the [customvision.ai](https://customvision.ai) website. Please sign up for one if you do not already have one. A Skype ID or a Xbox Live account are all considered Microsoft Accounts.
