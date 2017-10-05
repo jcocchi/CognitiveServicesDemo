@@ -10,6 +10,11 @@ Fork, clone, or download this repository. From the command line, navigate to the
 > Note: From here on, all file paths are relative to `[YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ/`
 
 ## Step 1 - Load environment variables
+1. Create a new file in the root directory of this node project called `.env`
+2. Start by copying the contents of the `.env.sample` file
+3. Paste the URL and the Prediction Key you got when you set up your custom vision model on the corresponding lines. You don't need to put the values in quotes or add any spaces after the `=`, simply paste your values as is.
+
+If you don't have keys yet, follow [these instructions](https://github.com/jcocchi/CognitiveServicesDemo/blob/master/node/cogServ/CustomVision.md) then come back to this step.
 
 ## Step 2 - Make the API call
 1. Uncomment `callAPI(url)` on line 11 of `controllers/results.js`
@@ -39,7 +44,7 @@ When the breakpoint is hit, you should see the top tag our model predicted based
       photo: data.photo
     })
 ```
-5. Run the project without any breakpoints and navigate to `http://localhost:3000/`, enter the URL of a photo and hit enter
+4. Run the project without any breakpoints and navigate to `http://localhost:3000/`, enter the URL of a photo and hit enter
 
 Now our site is complete! When you enter the URL of a photo you should see either the Lannister, Stark, or Targaryen sigil along with the probablity that our model got the house correct. Try it with different photos to see what you get!
 
