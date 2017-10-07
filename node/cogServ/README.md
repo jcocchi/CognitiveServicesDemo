@@ -7,6 +7,20 @@ For this workshop you will need to have [Node.js](https://nodejs.org/en/download
 
 Fork, clone, or download this repository. From the command line, navigate to the `[YOUR INSTALL LOCATION]/node/cogServ/` directory and enter `npm install`. To see the starting point for our project, run it by entering `set DEBUG=cogServ:* & npm start` if you are on a Windows machine and entering `DEBUG=cogServ:* npm start` if you are on a MacOS or Linux machine. The navigate to `http://localhost:3000/` in your browser.
 
+For Windows:
+```terminal
+  cd [YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ
+  npm install
+  set DEBUG=cogServ:* & npm start
+```
+
+For Mac/ Linux:
+```terminal
+  cd [YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ
+  npm install
+  DEBUG=cogServ:* npm start
+```
+
 > Note: From here on, all file paths are relative to `[YOUR INSTALL LOCATION]/CognitiveServicesDemo/node/cogServ/`
 
 ## Step 1 - Load environment variables

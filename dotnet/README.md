@@ -1,11 +1,17 @@
 # Cognitive Services Demo - ASP.NET Core
 
 ## Step 0 - Prerequisites
-If you didn't already get an Emotion API key, go back to the [main README](https://github.com/jcocchi/CognitiveServicesDemo) and follow the instructions to get an API key.
+If you don't already have an Emotion API key, follow [these README](https://github.com/jcocchi/CognitiveServicesDemo/dotnet/EmotionRecognition.md) instructions to get your key.
 
 For this workshop you will need to have [.NET Core](https://www.microsoft.com/net/download/core) installed as well as any text editor- my favorite is [Visual Studio Code](https://code.visualstudio.com/download).
 
 Fork, clone, or download this repository. From the command line, navigate to the `[YOUR INSTALL LOCATION]/CognitiveServicesDemo/dotnet` directory. First we need to bring in all of our project dependencies by entering `dotnet restore`. To see the starting point for our project, run it by entering `dotnet run` and navigating to `http://localhost:5000/` in your browser.
+
+```terminal
+  cd [YOUR INSTALL LOCATION]/CognitiveServicesDemo/dotnet
+  dotnet restore
+  dotnet run
+```
 
 > Note: From here on, all file paths are relative to `[YOUR INSTALL LOCATION]/CognitiveServicesDemo/dotnet/`
 
