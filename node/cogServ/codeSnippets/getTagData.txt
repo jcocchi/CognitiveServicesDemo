@@ -5,7 +5,7 @@ function getTagData (top) {
   var description = ''
 
   // Decide which image and description to use based on the tag passed in
-  switch (top.Tag) {
+  switch (top.Tag.toLower()) {
     case 'lannister':
       link = '/images/lannister.png'
       description = 'I spy the Lannister sigil, always pay your debts!'
