@@ -28,7 +28,7 @@ function getTagData (top) {
   const data = {
     photo: link,
     description: description,
-    probability: top.Probability
+    probability: top.Probability * 100
   }
 
   return data
