@@ -10,6 +10,7 @@ If you don't already have a [Microsoft Account](https://signup.live.com/) (Skype
 3. Accept Terms of Service.
 4. Add a Name and Description to the project.
 5. For this project select `General` as the Domain and click `Create project`.
+![NewProject](https://github.com/jcocchi/CognitiveServicesDemo/blob/master/node/cogServ/Screenshots/New%20Project.JPG)
 
 ## Step 2 - Add images
 1. Upload the images from the `VisionTrainingImages/Lannister` folder and add the tag `Lannister`. 
