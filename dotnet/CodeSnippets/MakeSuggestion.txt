@@ -1,6 +1,6 @@
 // This funtion goes in the Controllers/HomeController.cs file under the "helper functions" comment
 
-public Result MakeSuggestion(string emotion)
+Result MakeSuggestion(string emotion)
 {
     var link = "";
     var description = "";

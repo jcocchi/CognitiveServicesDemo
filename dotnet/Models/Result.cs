@@ -1,4 +1,4 @@
-namespace WebApplication.Models
+namespace emotionAPI.Models
 {
     public class Result
     {

@@ -1,6 +1,6 @@
 // This funtion goes in the Controllers/HomeController.cs file under the "helper functions" comment
 
-public async Task<String> MakeRequest(string submittedPhoto)
+async Task<String> MakeRequest(string submittedPhoto)
 {
     var client = new HttpClient();
 

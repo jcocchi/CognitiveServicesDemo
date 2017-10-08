@@ -1,6 +1,6 @@
 // This funtion goes in the Controllers/HomeController.cs file under the "helper functions" comment
 
-public string ParseResults(string results)
+string ParseResults(string results)
 {
     // Set up objects to store top emotion
     EmotionSet emotions = new EmotionSet();            
