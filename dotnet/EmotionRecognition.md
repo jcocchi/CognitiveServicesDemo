@@ -1,12 +1,12 @@
-## Prerequisites
-In order to complete either workshop, you first must have an Emotion API key. 
+## Get an Emotion Recognition API Key
+In order to complete the .NET Core version of this workshop, you first must have an Emotion API key. 
 
-1. Go to the [Microsoft Cognitive Services](microsoft.com/cognitive) website
-2. Click "Get started for free" and sign in with either your Microsoft, GitHub, or LinkedIn account and it should look like this
-![After Log In](images/AfterLoggedIn.PNG)
-3. Click "Send email verification" and follow the instructions in the email to verify your account
-![After Email Verify](images/AfterEmailVerify.PNG)
-4. Click "Get started for free" and find the "Emotion - Preview" API from the list
-5. Check the "I agree" box and click "Subscribe"
-6. Copy "Key 1" and save it for later, you will need this key during both of the workshops
-![Emotion API Key](images/EmotionAPI.PNG)
+1. Go to the Microsoft Cognitive Services [Emotion API](https://azure.microsoft.com/en-us/try/cognitive-services/?api=emotion-api) website
+2. Click "Get API Key" button, agree to the terms and services, enter your country and press next
+![Get API Key](images/GetAPIKey.PNG)
+3. Sign in with either your Microsoft, Facebook, LinkdIn, or Github account 
+![SignIn.PNG](images/SignIn.PNG)
+4. Copy "Key 1" and save it for later, you will need this key during the workshop
+![Emotion API Key](images/AfterLogIn.PNG)
+
+For more information and documentation on how to use this API, click the "Learn how to code" button!
